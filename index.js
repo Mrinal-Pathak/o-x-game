@@ -28,7 +28,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[3].innerHTML == board[4].innerHTML && board[4].innerHTML == board[5].innerHTML && board[3].innerHTML != '') {
+    else if (board[3].innerHTML == board[4].innerHTML && board[4].innerHTML == board[5].innerHTML && board[3].innerHTML != '') {
         if (board[3].innerHTML == 'O')
             winner = 'O';
         else
@@ -36,7 +36,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[6].innerHTML == board[7].innerHTML && board[7].innerHTML == board[8].innerHTML && board[6].innerHTML != '') {
+    else if (board[6].innerHTML == board[7].innerHTML && board[7].innerHTML == board[8].innerHTML && board[6].innerHTML != '') {
         if (board[6].innerHTML == 'O')
             winner = 'O';
         else
@@ -44,7 +44,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[0].innerHTML == board[3].innerHTML && board[3].innerHTML == board[6].innerHTML && board[0].innerHTML != '') {
+    else if (board[0].innerHTML == board[3].innerHTML && board[3].innerHTML == board[6].innerHTML && board[0].innerHTML != '') {
         if (board[0].innerHTML == 'O')
             winner = 'O';
         else
@@ -52,7 +52,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[1].innerHTML == board[4].innerHTML && board[4].innerHTML == board[7].innerHTML && board[1].innerHTML != '') {
+    else if (board[1].innerHTML == board[4].innerHTML && board[4].innerHTML == board[7].innerHTML && board[1].innerHTML != '') {
         if (board[1].innerHTML == 'O')
             winner = 'O';
         else
@@ -60,7 +60,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[2].innerHTML == board[5].innerHTML && board[5].innerHTML == board[8].innerHTML && board[2].innerHTML != '') {
+    else if (board[2].innerHTML == board[5].innerHTML && board[5].innerHTML == board[8].innerHTML && board[2].innerHTML != '') {
         if (board[2].innerHTML == 'O')
             winner = 'O';
         else
@@ -68,7 +68,7 @@ function checkwinner() {
         win();
     }
 
-    if (board[0].innerHTML == board[4].innerHTML && board[4].innerHTML == board[8].innerHTML && board[0].innerHTML != '') {
+    else if (board[0].innerHTML == board[4].innerHTML && board[4].innerHTML == board[8].innerHTML && board[0].innerHTML != '') {
         if (board[0].innerHTML == 'O')
             winner = 'O';
         else
@@ -76,14 +76,14 @@ function checkwinner() {
         win();
     }
 
-    if (board[2].innerHTML == board[4].innerHTML && board[4].innerHTML == board[6].innerHTML && board[2].innerHTML != '') {
+    else if (board[2].innerHTML == board[4].innerHTML && board[4].innerHTML == board[6].innerHTML && board[2].innerHTML != '') {
         if (board[2].innerHTML == 'O')
             winner = 'O';
         else
             winner = 'X';
         win();
     }
-    if (counter == 9 || compcounter == 5)
+    else if (counter == 9 || compcounter == 5)
         win();
 
 }
